@@ -6,7 +6,7 @@
 ?>
 
 <div class="content clearfix contact-block" data-key="animated-block-contact">
-    <h1>Информация о тамаде test</h1>
+    <h1>Информация о тамаде</h1>
     <div class="divider"></div>
     <img class="chick1" src="/img/chick1.png" alt=""/>
     <div class="about-text">
