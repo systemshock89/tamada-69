@@ -10,33 +10,29 @@
 <div class="content index-slider-container">
     <div class="index_slider">
         <div class="owl-carousel">
-            <div class="item item0">
-                <img class="img-bg" src="/img/slides/slide4.jpg" alt=""/>
-                <a href="/akcia" class="akciya-wraper">
-                    <div  class="akciya-container">
-                        <div class="title1">Выпускные вечера<br>от школьных до студенческих !!!</div>
-                        <div class="title2"></div>
-                    </div>
-                </a>
+            <div class="item slide1">
+                <div class="text-container">
+                    <a href="/contact" class="link-container">
+                        <div class="title">Проводится весенняя акция!</div>
+                        <div class="text">Скидки в честь майских праздников.<br>Устройте себе праздник вместе с нами!</div>
+                    </a>
+                </div>
             </div>
-            <div class="item item1">
-                <img class="img-bg" src="/img/slides/slide3.jpg" alt=""/>
-                <a href="/contact" class="akciya-wraper">
-                    <div  class="akciya-container">
-                        <div class="title1">Проводится весенняя акция!</div>
-                        <div class="title2">Скидки в честь майских праздников.<br> Устройте себе праздник вместе с нами!</div>
-                        <!--<p>Спешим предложить поздравительные минипрограммы<br> к празднику (продолжительностью от 30 минут)</p>-->
-                    </div>
-                </a>
+            <div class="item slide2">
+                <div class="text-container">
+                    <a href="/akcia" class="link-container">
+                        <div class="title">Выпускные вечера<br>от школьных до студенческих !!!</div>
+                        <div class="text"></div>
+                    </a>
+                </div>
             </div>
-            <div class="item item2">
-                <img class="img-bg" src="/img/slides/slide2.jpg" alt=""/>
-                <a href="/contact" class="akciya-wraper">
-                    <div  class="akciya-container">
-                        <div class="title1">Проводится весенняя акция!</div>
-                        <div class="title2">Скидки в честь майских праздников.<br> Устройте себе праздник вместе с нами!</div>
-                    </div>
-                </a>
+            <div class="item slide3">
+                <div class="text-container">
+                    <a href="/contact" class="link-container">
+                        <div class="title">Проводится весенняя акция!</div>
+                        <div class="text">Скидки в честь майских праздников.<br>Устройте себе праздник вместе с нами!</div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

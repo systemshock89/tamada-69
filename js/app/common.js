@@ -5,12 +5,6 @@
 
 $(function(){
 
-    /* Переносим правый блок вправо */
-    $('.floatblock.center-min, .floatblock.center-middle').before($('.floatblock.right').show());
-    $('.padding-right').hide();
-    /* /Переносим правый блок вправо */
-
-
     /* Активный пункт меню */
     $('.menu-top ul > li > a').each(function() {
         if ('http://tamada-69.ru'+$(this).attr('href') == window.location.href){
@@ -20,15 +14,9 @@ $(function(){
     /* /Активный пункт меню */
 
 
-    /* placeholder */
-    if( $('input').attr('placeholder') ||  $('textarea').attr('placeholder') ) {
-        $.getScript( 'https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.1.2/jquery.placeholder.min.js', function() {
-
-            $('input[placeholder], textarea[placeholder]').placeholder();
-
-        });
-    }
-    /* /placeholder */
+    /* фиксированное верхнее меню */
+    $('.menu-top-container').waypoint('sticky');
+    /* /фиксированное верхнее меню */
 
 
     /* Адаптивное верхнее меню */
@@ -43,47 +31,75 @@ $(function(){
     /* /Адаптивное верхнее меню */
 
 
-    /* Динамическое подключение fancybox */
-    if( jQuery("a").is(".fancybox-thumb") ){
-        jQuery('head').append("<link rel='stylesheet' type='text/css'  href='/css/fancybox/jquery.fancybox.css'/>"); /* Подключим стили */
-        jQuery('head').append("<link rel='stylesheet' type='text/css'  href='/css/fancybox/helpers/jquery.fancybox-thumbs.css?v=1.0.7'/>"); /* Подключим стили */
-        jQuery.getScript( '/js/lib/fancybox/jquery.fancybox.js?v=2.1.5', function() {/* Подключим скрипт */
-        jQuery.getScript( '/js/lib/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7', function() {/* Подключим скрипт */
+    /* placeholder */
+    if( $('input').attr('placeholder') ||  $('textarea').attr('placeholder') ) {
+        $.getScript( 'https://cdnjs.cloudflare.com/ajax/libs/jquery-placeholder/2.1.2/jquery.placeholder.min.js', function() {
 
-                /* Подрубаем галерею */
-                jQuery(".fancybox-thumb").fancybox({
-                    prevEffect	: 'none',
-                    nextEffect	: 'none',
-                    helpers	: {
-                        title	: {
-                            type: 'outside'
-                        },
-                        thumbs	: {
-                            width	: 50,
-                            height	: 50
-                        },
-                        overlay: {
-                            locked: false
-                        }
-                    }
-                });
+            $('input[placeholder], textarea[placeholder]').placeholder();
 
-                /* Открываем автоматом по id через класс */
-                var start_id = window.location.href.indexOf("#");
-                if( start_id > 0 ){
-                    var id = window.location.href.substring( start_id+1 );
-                    jQuery('a.fancybox-thumb.id' + id ).click();
-                }
-
-            });
         });
     }
-    /* /Динамическое подключение fancybox */
+    /* /placeholder */
 
 
-    /* фиксированное верхнее меню */
-    $('.menu-top-container').waypoint('sticky');
-    /* /фиксированное верхнее меню */
+    // Отменить перетаскивание картинок и ссылок
+    $("img, a").on("dragstart", function(event) { event.preventDefault(); });
+
+
+    /* /fancybox3 beta1 */
+    try {
+        if ($("a").is(".fancybox-thumb")) {
+
+            /* Подрубаем галерею */
+            $(".fancybox-thumb").fancybox({
+                openEffect  : 'none',
+                closeEffect : 'elastic',
+                prevEffect: 'fade',
+                nextEffect: 'fade',
+                //theme : 'dark',
+                //locked : false,
+                padding : 0,
+                caption : {
+                    type : 'outside'
+                },
+                arrows : '!isTouch',
+                helpers: {
+                    thumbs: {
+                        width: 50,
+                        height: 50
+                    }
+                },
+                locale  : 'ru',
+                locales : {
+                    'ru' : {
+                        CLOSE      : 'Закрыть',
+                        NEXT       : 'Следующий',
+                        PREV       : 'Предыдущий',
+                        ERROR      : 'Запрашиваемый слайд не может быть загружен.<br/> Пожалуйста, повторите попытку позже.',
+                        EXPAND     : 'Показать оригинальный размер',
+                        SHRINK     : 'Вписать в экран',
+                        PLAY_START : 'Просмотр слайдшоу',
+                        PLAY_STOP  : 'Поставить показ слайдов на паузу'
+                    }
+                }
+            });
+
+            /* Открываем автоматом по id через класс */
+            var start_id = window.location.href.indexOf("#");
+            if (start_id > 0) {
+                var id = window.location.href.substring(start_id + 1);
+                $('a.fancybox-thumb.id' + id).click();
+            }
+
+            /* обновляем при ресайзе */
+            $( window ).resize(function() {
+                $.fancybox.update();
+            });
+        }
+    } catch(err) {
+
+    }
+    /* /fancybox3 beta1 */
 
 
     /* Owl Slider */
@@ -173,10 +189,48 @@ $(function(){
     /* /кнопка Наверх */
 
 
-    // Отменить перетаскивание картинок и ссылок
-    $("img, a").on("dragstart", function(event) { event.preventDefault(); });
-
 }); // END READY
+
+
+var Load = function (url, param) { // Функция для стандартизации общения с сервером
+    $.post(
+        url,
+        param,
+        function (data) {
+            var sc_ = '';
+            if (data['script']) {
+                sc_ = data['script'];
+                delete data['script'];
+            }
+            for (i in data) {
+                $(i).html(data[i]);
+            }
+            eval(sc_);
+        },
+        'json'
+    );
+};
+
+
+var Message = function (message) { // Всплывающее сообщение на базе наработки standart_window
+
+    $('.window.message').remove(); /* Удалилил старое окно */
+    /* Добавлеяем новое окно */
+    $('body').append(
+        '<div class="window message">' +
+        '<div class="window-popup-overflower"></div>' +
+        '    <div class="window_body">' +
+        '        <div class="close">x</div>' +
+        '        <div class="content">' +
+        '            <div class="block">' +
+        message +
+        '            </div>' +
+        '        </div>' +
+        '    </div>' +
+        '</div>');
+
+    $('.window.message').standart_window();
+};
 
 
 //Баг в ie с прыгающим рывками элементом с position: fixed

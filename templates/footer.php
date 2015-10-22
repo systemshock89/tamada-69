@@ -11,7 +11,7 @@
            <a class="item fb" title="Facebook" href="https://www.facebook.com/profile.php?id=100009622655963" target="_blank"></a>
            <a class="item tw" title="Twitter" href="https://twitter.com/TamadaVictor" target="_blank"></a>
        </div>
-       <div class="phone animated">+7-960-715-82-65</div>
+       <a href="tel:+79607158265" class="phone animated">+7-960-715-82-65</a>
        <div class="counter">
            <!-- Yandex.Metrika informer -->
            <a href="https://metrika.yandex.ru/stat/?id=28213521&amp;from=informer"
@@ -26,20 +26,6 @@
 <!--preloader-->
 <div class="page-preloader"><span class="spinner"></span></div>
 
-<!-- scripts -->
-<!--[if lt IE 9]>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.4/jquery.slicknav.min.js"></script>
-<? if ( $page_name == 'index-page'){ ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-<? } ?>
-<script src="/js/app/common.js?v=04"></script>
-<script src="/js/app/animations.js?v=01"></script>
-<!-- /scripts -->
 
 <!-- Google Analytics -->
 <script>
@@ -79,6 +65,23 @@
 </script>
 <noscript><div><img src="//mc.yandex.ru/watch/28213521" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
+
+<!-- scripts -->
+<!--[if lt IE 9]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.4/jquery.slicknav.min.js"></script>-->
+<script src="/js/lib/jquery.fancybox.js"></script>
+<? if ( $page_name == 'index-page'){ ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<? } ?>
+<script src="/js/app/common.js?v=05"></script>
+<script src="/js/app/animations.js?v=02"></script>
+<!-- /scripts -->
 
 </body>
 </html>
