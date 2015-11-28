@@ -68,6 +68,7 @@
 
 
 <!-- scripts -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <!--[if lt IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
