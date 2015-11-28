@@ -351,7 +351,7 @@
         margin: 0 auto;
     }
 
-    .zakaz-block{
+    .index-page .zakaz-block{
         float: none;
         margin: 10px auto 0px auto;
     }
@@ -461,6 +461,30 @@
     .rays-container{
         margin-left: auto!important;
         margin-right: auto!important;
+    }
+
+    .rays-container.rays3{
+        margin-top: 203px;
+    }
+
+    .rays-container.rays3 .rays-logo{
+        left: 10px;
+    }
+
+    .rays-container.rays3 .rays{
+        left: -120px;
+    }
+
+    .rays-container.rays5{
+        margin-top: 240px;
+    }
+
+    .rays-container.rays5 .rays-logo{
+        left: 0;
+    }
+
+    .rays-container.rays5 .rays{
+        left: -109px;
     }
 
     .hardware-page .table-block .colomn p{
@@ -633,6 +657,12 @@
     .floatblock.right{
         float: none;
         width: 100%;
+    }
+
+    img.price-heart,
+    img.chick1,
+    img.chick2{
+        width: 25%;
     }
     /*---------/RESPONSIVE STANDART STYLES------------*/
 
@@ -823,6 +853,12 @@
 
     .zakaz-block.contacts .button{
         width: auto;
+        font-size: 18px;
+    }
+
+    .index_slider .item .text-container {
+        width: 90%;
+        margin-left: -45%;
     }
 
     .index_slider .item .link-container{
@@ -830,17 +866,36 @@
     }
 
     .index_slider .item .link-container .title{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .index_slider .item .link-container .text{
-        font-size: 16px;
+        font-size: 14px;
         text-transform: none;
-        margin-top: 10px;
+        margin-top: 0;
         margin-bottom: 10px;
+    }
+
+    .index_slider .owl-theme .owl-controls .owl-buttons .owl-prev,
+    .index_slider .owl-theme .owl-controls .owl-buttons .owl-next{
+        display: none;
     }
     /*--------- /RESPONSIVE OTHER STYLES------------*/
 
 }
 /* /FOR PHONE - max-width: 650px */
+
+
+/* FOR IPHONE - max-width: 350px */
+@media only screen and (max-width: 350px) {
+
+    .slicknav_menu .slicknav_btn{
+        padding: 10px 13px 12px 5px;
+    }
+
+    .slicknav_menu .slicknav_menutxt{
+        display: none;
+    }
+}
+/* /FOR IPHONE - max-width: 350px */
 /*---------RESPONSIVE STYLES------------*/

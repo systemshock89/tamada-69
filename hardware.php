@@ -25,11 +25,9 @@
            <p>Микрофон для<br>караоке</p>
        </div>
        <div class="colomn two animated">
-           <div class="colomn one animated">
-               <div class="rays-container rays2">
-                   <div class="rays-logo"></div>
-                   <div class="rays"></div>
-               </div>
+           <div class="rays-container rays2">
+               <div class="rays-logo"></div>
+               <div class="rays"></div>
            </div>
        </div>
    </div>
