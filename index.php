@@ -11,27 +11,42 @@
     <div class="index_slider">
         <div class="owl-carousel">
             <div class="item slide1">
+                <img class="img-slide-pic" src="/img/slides/slide1.jpg" alt=""/>
                 <div class="text-container">
-                    <a href="/contact" class="link-container">
-                        <div class="title">Проводится весенняя акция!</div>
-                        <div class="text">Скидки в честь майских праздников.<br>Устройте себе праздник вместе с нами!</div>
-                    </a>
+                   <div class="text-container-wraper">
+                       <div class="text-container-wraper2">
+                           <a href="/contact" class="link-container">
+                               <div class="title">Проводится весенняя акция!</div>
+                               <div class="text">Скидки в честь майских праздников.<br>Устройте себе праздник вместе с нами!</div>
+                           </a>
+                       </div>
+                   </div>
                 </div>
             </div>
             <div class="item slide2">
+                <img class="img-slide-pic" src="/img/slides/slide2.jpg" alt=""/>
                 <div class="text-container">
-                    <a href="/akcia" class="link-container">
-                        <div class="title">Выпускные вечера<br>от школьных до студенческих !!!</div>
-                        <div class="text"></div>
-                    </a>
+                    <div class="text-container-wraper">
+                        <div class="text-container-wraper2">
+                            <a href="/akcia" class="link-container">
+                                <div class="title">Выпускные вечера<br>от школьных до студенческих !!!</div>
+                                <div class="text"></div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="item slide3">
+                <img class="img-slide-pic" src="/img/slides/slide3.jpg" alt=""/>
                 <div class="text-container">
-                    <a href="/contact" class="link-container">
-                        <div class="title">Проводится весенняя акция!</div>
-                        <div class="text">Скидки в честь майских праздников.<br>Устройте себе праздник вместе с нами!</div>
-                    </a>
+                    <div class="text-container-wraper">
+                        <div class="text-container-wraper2">
+                            <a href="/contact" class="link-container">
+                                <div class="title">Проводится весенняя акция!</div>
+                                <div class="text">Скидки в честь майских праздников.<br>Устройте себе праздник вместе с нами!</div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -88,7 +103,7 @@
             Жду Ваших звонков.
         </p>
     </div>
-    <div class="right-part">
+    <div class="right-part clearfix">
         <div class="h1">Преимущества</div>
         <ul>
             <li>Креативный подход</li>
@@ -112,6 +127,7 @@
         <script type="text/javascript">
             VK.Widgets.Group("vk_groups", {mode: 0, width: "287", height: "400", color1: 'FFFFFF', color2: '4E4E4E', color3: 'd03704'}, 78705053);
         </script>
+        <div class="clear"></div>
 
         <div class="heart2">
             <img class="heart2_1" src="/img/heart3.png" alt=""/>

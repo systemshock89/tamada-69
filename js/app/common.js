@@ -23,7 +23,7 @@ $(function(){
     try {
         $('.menu-top').eq(0).slicknav({
             label: 'МЕНЮ',
-            prependTo:'.header-sticky'
+            prependTo:'header .content'
         });
     } catch(err) {
 
@@ -117,6 +117,9 @@ $(function(){
                 responsiveBaseWidth: '.index_slider .owl-carousel',
                 transitionStyle : "fadeUp"
             });
+
+            owl.find('.owl-controls .owl-buttons .owl-prev').attr('title', 'Предыдущий');
+            owl.find('.owl-controls .owl-buttons .owl-next').attr('title', 'Следующий');
 
         }
     });

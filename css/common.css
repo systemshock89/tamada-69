@@ -363,7 +363,6 @@ header .contacts .phone{
     text-align: left;
     font-weight: bold;
     text-decoration: none;
-    color: #3f3f3f;
 }
 
 header .contacts .phone img{
@@ -374,7 +373,12 @@ header .contacts .phone img{
     animation-duration:  0.6s;
 }
 
-header .contacts .phone:hover:before{
+header .contacts .phone span{
+    color: #3f3f3f;
+    position: relative;
+}
+
+header .contacts .phone:hover span:before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -434,33 +438,15 @@ header .contacts span{
     list-style: none;
 }
 
-/* Обнуляем шрифт и line-height у родителя*/
 .menu-top > ul{
-    line-height: 0;
-    font-size: 1px;
-    text-align: justify;
-    padding: 0 45px;
-}
-
-/* доп элемент для выравнивания по ширине */
-.menu-top li.helper {
+    display: table;
     width: 100%;
-    height: 0;
-    visibility: hidden;
-    overflow: hidden;
 }
 
 .menu-top > ul > li{
-    display: inline-block;
+    display: table-cell;
     position: relative;
     z-index: 5;
-
-    /* Востанавливаем у потомков, кроме последнего*/
-    line-height: normal;
-    font-size: 20px;
-
-    /* Без него в Opera будет отступ под элементами */
-    vertical-align: top;
 }
 
 .menu-top > ul > li > ul{
@@ -495,6 +481,7 @@ header .contacts span{
     color: #FBE2DA;
     text-shadow: 2px 2px 4px #6F230C;
     text-decoration: none;
+    text-align: center;
 }
 /*---------/1 level menu-top------------*/
 
@@ -542,24 +529,45 @@ header .contacts span{
 }
 
 .index_slider .item {
-    width: 1000px;
-    min-height: 360px;
+    position: relative;
+    max-width: 1000px;
+    max-height: 360px;
     background-size: cover;
     background: #b4b4b4;
-    display: table;
+}
+
+.index_slider .item .img-slide-pic{
+    max-width: 100%;
+    height: auto;
+    max-height: 360px;
+    display: block;
 }
 
 .index_slider .item .text-container{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    left: 50%;
+    margin-left: -40%;
+}
+
+.index_slider .item .text-container .text-container-wraper{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.index_slider .item .text-container .text-container-wraper2{
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
 }
 
 .index_slider .item .link-container{
     display: block;
     text-decoration: none;
     border-radius: 20px;
-    width: 750px;
     margin: 0 auto;
     padding: 50px 20px 30px 20px;
     color: #fff;
@@ -638,24 +646,12 @@ header .contacts span{
 }
 
 /*оформление слайдов*/
-.index_slider .item.slide1{
-    background: url('../img/slides/slide1.jpg') top center no-repeat;
-}
-
 .index_slider .item.slide1 .link-container{
     background: rgba(236, 136, 188, 0.8);
 }
 
-.index_slider .item.slide2{
-    background: url('../img/slides/slide2.jpg') top center no-repeat;
-}
-
 .index_slider .item.slide2 .link-container{
     background: rgba(93, 90, 109, 0.6);
-}
-
-.index_slider .item.slide3{
-    background: url('../img/slides/slide3.jpg') top center no-repeat;
 }
 
 .index_slider .item.slide3 .link-container{
@@ -1169,8 +1165,8 @@ ul.style1.two li:nth-child(4){
 
 .index-page .block2 .left-part{
     float: left;
-    margin: 0 47px 0 0;
-    width: 597px;
+    margin: 0 45px 0 0;
+    width: 625px;
     line-height: 20px;
 }
 
@@ -1192,7 +1188,7 @@ ul.style1.two li:nth-child(4){
 
 .index-page .block2 .right-part{
     float: left;
-    width: 287px;
+    width: 290px;
 }
 
 .index-page .block2 .right-part ul{

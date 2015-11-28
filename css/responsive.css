@@ -86,6 +86,39 @@
     /*---------/RESPONSIVE STANDART STYLES------------*/
 
 
+    /*---------HEADER STYLES------------*/
+    header .content{
+        height: 157px;
+    }
+
+    header .logo{
+        margin: 10px 0 0 0px;
+    }
+
+    header .logo .text{
+        font-size: 22px;
+
+    }
+
+    header .contacts{
+        margin: 10px 0 0 0px;
+    }
+
+    header .contacts .phone{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    header .contacts .phone img{
+        top: 4px;
+    }
+
+    header .contacts .phone:hover span:before{
+        bottom: -3px;
+    }
+    /*---------/HEADER STYLES------------*/
+
+
     /*---------RESPONSIVE NEWS (ALL)------------*/
     .news .item{
         margin: 2% 0;
@@ -308,6 +341,51 @@
     /*---------/RESPONSIVE FOOTER------------*/
 
 
+    /*---------RESPONSIVE INDEX PAGE------------*/
+    .content-wraper.content-center > .content.index-block{
+        padding: 2%;
+        width: 96%;
+    }
+
+    .spisok-uslug{
+        float: none;
+        margin: 0 auto;
+    }
+
+    .zakaz-block{
+        float: none;
+        margin: 10px auto 0px auto;
+    }
+
+    .index-page .block2 .left-part,
+    .index-page .block2 .right-part{
+        width: auto;
+        float: none;
+    }
+
+    .index-page .block2 .right-part{
+        text-align: center;
+    }
+
+    .index-page .block2 .right-part ul{
+        float: left;
+        text-align: left;
+    }
+
+    .index-page .heart1{
+        display: none;
+    }
+
+    .index-page #vk_groups{
+        float: right;
+    }
+
+    .index-page .heart2{
+        display: inline-block;
+    }
+    /*---------/RESPONSIVE INDEX PAGE------------*/
+
+
     /*---------/RESPONSIVE OTHER STYLES------------*/
     .sendmessage_form table.sendmessgae{
         width: 100%;
@@ -325,9 +403,172 @@
         width: 100%;
         box-sizing: border-box;
     }
+
+    .menu-top-container .content{
+        width: 100%;
+    }
+
+    .menu-top{
+        left: 0;
+        padding: 0;
+        width: 96%;
+        padding: 0 2%;
+    }
+
+    .menu-top > ul > li > a{
+        padding: 11px 10px;
+    }
+
+    .menu-top:before,
+    .menu-top:after{
+        content: '';
+    }
+
+    footer .copyright{
+        display: none;
+    }
+
+    footer .counter{
+        float: right;
+        margin-left: 0;
+    }
+
+    .price-text{
+        width: auto;
+        float: none;
+    }
+
+    .price-heart{
+        margin-top: 10px;
+        float: none;
+    }
+
+    .zakaz-block.contacts{
+        float: none!important;
+        margin: 0 auto 25px auto;
+    }
+
+    .content-wraper.content-center > .content.index-slider-container{
+        width: 100%;
+    }
     /*---------/RESPONSIVE OTHER STYLES------------*/
 }
 /* /FOR TABLET - max-width: 1000px */
+
+
+/*  max-width: 830px */
+@media only screen and (max-width: 830px) {
+
+    header .content{
+        height: 62px;
+        padding: 0 2%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    header .logo{
+        display: none;
+    }
+
+    header .contacts{
+        margin-top: 8px;
+        padding: 8px 15px;
+    }
+
+    header .contacts .text{
+        display: none;
+    }
+
+    header .contacts .phone{
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    header .contacts .phone img{
+        top: 5px;
+        width: 30px;
+    }
+
+    header .contacts .phone:hover span:before{
+        bottom: -5px;
+    }
+
+    .menu-top {
+        display: none;
+    }
+
+    .slicknav_menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        padding: 0;
+    }
+
+    .slicknav_menu .slicknav_btn {
+        float: left;
+        font-size: 18px;
+        margin-top: 12px;
+        background: #6e2a30;
+        margin-bottom: 13px;
+    }
+
+    .slicknav_menu .slicknav_nav {
+        background: #e8ebec;
+        padding: 10px 0;
+        box-shadow: 0px 1px 2px 0px rgba(9, 9, 9, 0.45);
+    }
+
+    .slicknav_nav a{
+        color: #3f3f3f;
+    }
+
+    .slicknav_nav a:hover{
+        -webkit-border-radius: 0!important;
+        -moz-border-radius:0!important;
+        border-radius: 0!important;
+    }
+
+    .slicknav_nav ul{
+        margin-left: 8px;
+    }
+    .slicknav_nav > ul{
+        margin: 0;
+    }
+
+    .slicknav_nav li.selected > a,
+    .slicknav_nav li:hover > a{
+        background: #ccc;
+        color: #222;
+    }
+
+    .sticky-wrapper{
+        display: none;
+    }
+
+    .content-wraper.content-center{
+        margin-top: 62px;
+    }
+}
+/* / max-width: 830px */
+
+
+/*  max-width: 780px */
+@media only screen and (max-width: 780px) {
+    footer .counter{
+        display: none;
+    }
+
+    footer .phone{
+        float: right;
+        margin-left: 0;
+    }
+}
+/* / max-width: 780px */
 
 
 /* FOR PHONE - max-width: 650px */
@@ -454,6 +695,19 @@
     }
     /*---------/RESPONSIVE FAQ------------*/
 
+    /*---------RESPONSIVE INDEX PAGE------------*/
+    .spisok-uslug{
+        width: auto;
+    }
+
+    .index-block ul.style1,
+    .index-block ul.style1.two{
+        float: none;
+        margin: 0 0 0 15px;
+        width: auto;
+    }
+    /*---------/RESPONSIVE INDEX PAGE------------*/
+
 
     /*---------RESPONSIVE OTHER STYLES------------*/
     .toTop{
@@ -462,14 +716,6 @@
 
     .widget-phone{
         display: none!important;
-    }
-
-    .menu-top {
-        display:none;
-    }
-
-    .slicknav_menu {
-        display:block;
     }
 
     .path{
@@ -486,6 +732,63 @@
     .sendmessage_form tr td.right{
         width: 100%;
         display: block;
+    }
+
+    .index-page .block2 .right-part ul{
+        float: none;
+    }
+
+    .index-page #vk_groups{
+        display: none;
+    }
+
+    footer .phone{
+        display: none;
+    }
+
+    footer .socials{
+        margin-top: 10px;
+    }
+
+    footer .copyright{
+        display: block;
+        margin-top: 15px;
+    }
+
+    footer{
+        height: 50px;
+        margin-top: -50px;
+    }
+
+    .hFooter{
+        height: 50px;
+    }
+
+    .zakaz-block.contacts{
+        width: auto;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .zakaz-block.contacts .button{
+        width: auto;
+    }
+
+    .index_slider .item .link-container{
+        padding: 20px 10px 10px 10px;
+    }
+
+    .index_slider .item .link-container .title{
+        font-size: 18px;
+    }
+
+    .index_slider .item .link-container .text{
+        font-size: 16px;
+        text-transform: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     /*--------- /RESPONSIVE OTHER STYLES------------*/
 

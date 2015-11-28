@@ -7,7 +7,7 @@
     <meta name="description" content="<?= $description ?>">
     <meta name="keywords" content="<?= $keywords ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/favicon/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png">
@@ -29,7 +29,7 @@
     <? } ?>
 
     <link rel="stylesheet" href="/css/common.css?v=08">
-<!--    <link rel="stylesheet" href="/css/responsive.css?v=01">-->
+    <link rel="stylesheet" href="/css/responsive.css?v=01">
 </head>
 
 <body class="<?= $page_name ?>">
@@ -43,10 +43,12 @@
                 <div class="text">Энергичный тамада<br> Виктор</div>
             </a>
             <div class="contacts">
-                <span>Звоните!</span> с 9 до 22 без выходных!
+                <div class="text"><span>Звоните!</span> с 9 до 22 без выходных!</div>
                 <a href="tel:+79607158265" class="phone">
-                    <img class="animated" src="/img/phone.png" alt=""/>
-                    +7-960-715-82-65
+                    <span>
+                         <img class="animated" src="/img/phone.png" alt=""/>
+                        +7-960-715-82-65
+                    </span>
                 </a>
             </div>
         </div>
@@ -70,7 +72,6 @@
                              </ul>
                         </li>
                        <li><a href="/contact">Контакты</a></li>
-                       <li class="helper"></li> <!-- доп элемент для выравнивания по ширине -->
                 </ul>
             </nav>
         </div>

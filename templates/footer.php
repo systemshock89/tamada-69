@@ -24,7 +24,7 @@
 </footer>
 
 <!--preloader-->
-<div class="page-preloader"><span class="spinner"></span></div>
+<!--<div class="page-preloader"><span class="spinner"></span></div>-->
 
 
 <!-- Google Analytics -->
@@ -74,7 +74,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/shortcuts/sticky-elements/waypoints-sticky.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.4/jquery.slicknav.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.4/jquery.slicknav.min.js"></script>
 <script src="/js/lib/jquery.fancybox.js"></script>
 <? if ( $page_name == 'index-page'){ ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
