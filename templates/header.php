@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.transitions.min.css"/>
     <? } ?>
 
-    <link rel="stylesheet" href="/css/common.css?v=10">
+    <link rel="stylesheet" href="/css/common.css?v=11">
     <link rel="stylesheet" href="/css/responsive.css?v=01">
 </head>
 

@@ -24,7 +24,7 @@
 </footer>
 
 <!--preloader-->
-<!--<div class="page-preloader"><span class="spinner"></span></div>-->
+<div class="page-preloader"><span class="spinner"></span></div>
 
 
 <!-- Google Analytics -->
