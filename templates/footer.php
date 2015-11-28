@@ -79,8 +79,9 @@
 <? if ( $page_name == 'index-page'){ ?>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 <? } ?>
-<script src="/js/app/common.js?v=06"></script>
-<script src="/js/app/animations.js?v=02"></script>
+<!--<script src="/js/app/common.js?v=06"></script>-->
+<!--<script src="/js/app/animations.js?v=02"></script>-->
+<script src="/js/production.js?v=01"></script>
 <!-- /scripts -->
 
 </body>
