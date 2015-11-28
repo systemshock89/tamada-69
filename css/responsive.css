@@ -15,7 +15,6 @@
 
     #overflow_div{
         min-width: inherit;
-        min-height: inherit;
     }
 
     .content{
@@ -135,22 +134,22 @@
 
     /*---------RESPONSIVE CATALOG------------*/
     .catalog .catalog-container:after {
-        word-spacing: 300px;
-        padding-left: 300px;
+        word-spacing: 241px;
+        padding-left: 241px;
     }
 
     .catalog .item {
-        width: 300px;
+        width: 243px;
     }
 
     .catalog .item .img-container {
-        width: 245px;
-        height: 215px;
+        width: 243px;
+        height: 135px;
     }
 
     .catalog .item .img-container img{
-        max-width: 245px;
-        max-height: 215px;
+        max-width: 243px;
+        max-height: 135px;
     }
 
     .catalog.one .item{
@@ -163,42 +162,42 @@
 
     /*catalog.sections*/
     .catalog.sections .catalog-container:after {
-        word-spacing: 280px;
-        padding-left: 280px;
+        word-spacing: 241px;
+        padding-left: 241px;
     }
 
     .catalog.sections .item {
-        width: 280px;
+        width: 243px;
     }
 
     .catalog.sections .item .img-container {
-        width: 260px;
-        height: 113.5px;
+        width: 243px;
+        height: 135px;
     }
 
     .catalog.sections .item .img-container img {
-        max-width: 315px;
-        max-height: 113.5px;
+        max-width: 243px;
+        max-height: 135px;
     }
 
     /*catalog.gallery*/
     .catalog.gallery .catalog-container:after {
-        word-spacing: 258px;
-        padding-left: 258px;
+        word-spacing: 241px;
+        padding-left: 241px;
     }
 
     .catalog.gallery .item {
-        width: 260px;
+        width: 243px;
     }
 
     .catalog.gallery .item .img-container {
-        width: 260px;
-        height: 169px;
+        width: 243px;
+        height: 135px;
     }
 
     .catalog.gallery .item .img-container img {
-        max-width: 230px;
-        max-height: 149px;
+        max-width: 243px;
+        max-height: 135px;
     }
     /*---------/RESPONSIVE CATALOG------------*/
 
@@ -343,7 +342,7 @@
 
     /*---------RESPONSIVE INDEX PAGE------------*/
     .content-wraper.content-center > .content.index-block{
-        padding: 2%;
+        padding: 20px 2% 20px 2%;
         width: 96%;
     }
 
@@ -361,6 +360,7 @@
     .index-page .block2 .right-part{
         width: auto;
         float: none;
+        margin-right: 0;
     }
 
     .index-page .block2 .right-part{
@@ -433,18 +433,8 @@
         margin-left: 0;
     }
 
-    .price-text{
-        width: auto;
-        float: none;
-    }
-
-    .price-heart{
-        margin-top: 10px;
-        float: none;
-    }
-
     .zakaz-block.contacts{
-        float: none!important;
+        float: none;
         margin: 0 auto 25px auto;
     }
 
@@ -454,6 +444,30 @@
     /*---------/RESPONSIVE OTHER STYLES------------*/
 }
 /* /FOR TABLET - max-width: 1000px */
+
+
+/*  max-width: 880px */
+@media only screen and (max-width: 880px) {
+
+    .hardware-page .table-block{
+
+    }
+
+    .hardware-page .table-block .colomn{
+        display: block;
+        text-align: center;
+    }
+
+    .rays-container{
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+
+    .hardware-page .table-block .colomn p{
+        width: auto;
+    }
+}
+/* / max-width: 880px */
 
 
 /*  max-width: 830px */
@@ -567,6 +581,29 @@
         float: right;
         margin-left: 0;
     }
+
+    .index_slider .item .link-container .title{
+        font-size: 24px;
+    }
+
+    .index_slider .item .link-container .text{
+        font-size: 18px;
+    }
+
+    .dj-page .table-block .colomn{
+        display: block;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .dj-page .table-block .colomn img{
+        margin: 0!important;
+    }
+
+    .dj-page .table-block .colomn p{
+        width: auto;
+        line-height: normal;
+    }
 }
 /* / max-width: 780px */
 
@@ -575,6 +612,10 @@
 @media only screen and (max-width: 650px) {
 
     /*---------RESPONSIVE STANDART STYLES------------*/
+    h1, .h1{
+        font-size: 20px;
+    }
+
     .floatblock.center-min{
         width: 100%;
     }
@@ -615,7 +656,17 @@
     }
 
     .catalog .item .img-container{
+        width: auto!important;
+        height: auto!important;
+        display: inline-block;
+    }
+
+    .catalog .item .img-container img{
+        position: relative;
+        display: block;
         width: 100%;
+        max-width: 440px!important;
+        max-height: 244px!important;
     }
 
     /*catalog.one*/
@@ -766,10 +817,8 @@
 
     .zakaz-block.contacts{
         width: auto;
-        margin-left: 3%;
-        margin-right: 3%;
-        padding-left: 4%;
-        padding-right: 4%;
+        padding: 4%;
+        float: none!important;
     }
 
     .zakaz-block.contacts .button{

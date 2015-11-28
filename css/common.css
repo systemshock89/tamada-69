@@ -5,8 +5,8 @@ html, body {
     height:100%;
     margin:0;
     padding:0;
-    font-family:tahoma;
-    font-size:14px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
     color:#242424;
 }
 
@@ -30,8 +30,8 @@ img{
 }
 
 input{
-    font-family:tahoma;
-    font-size:14px;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
 }
 
 input[type='text'], input[type='file'], input[type='password'] {
@@ -48,8 +48,8 @@ input[type='text']:focus, input[type='password']:focus {
 }
 
 textarea {
-    font-family: tahoma;
-    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     padding: 5px 10px;
     height: 70px;
     overflow: auto;
@@ -323,7 +323,7 @@ header .content{
 
 header .logo{
     float: left;
-    margin: 18px 0 0 11px;
+    margin: 13px 0 0 11px;
     text-decoration: none;
     text-align: center;
 }
@@ -573,7 +573,7 @@ header .contacts span{
     color: #fff;
 
     background: rgba(178, 210, 210, 0.8);
-    text-shadow: 2px 3px 5px rgba(43,36,36,.75);
+    text-shadow: 2px 2px 5px rgba(0,0,0,.55)
 }
 
 .index_slider .item .link-container:hover {
@@ -1066,7 +1066,7 @@ ul.style1.two li:nth-child(4){
 }
 
 
-.zakaz-block{
+.index-page .zakaz-block{
     width: 313px;
     margin-top: 21px;
     padding: 24px 0 32px 0;
@@ -1074,6 +1074,8 @@ ul.style1.two li:nth-child(4){
     float: right;
     margin-right: 20px;
     font-size: 20px;
+    letter-spacing: 1px;
+
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -1082,80 +1084,18 @@ ul.style1.two li:nth-child(4){
     -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.75);
     box-shadow: 1px 2px 5px rgba(0,0,0,.75);
     border: solid 2px #ccc;
-    letter-spacing: 1px;
 }
 
-.zakaz-block h2{
+.index-page .zakaz-block h2{
     text-transform: none;
     margin: 0;
     padding: 0;
 }
 
-.zakaz-block .button{
+.index-page .zakaz-block .button{
     margin-top: 21px;
     width: 151px;
     letter-spacing: normal;
-}
-
-.zakaz-block.contacts{
-    width: 425px;
-    height: 289px;
-    margin: 20px 0 0 0;
-}
-
-.zakaz-block.contacts .button{
-    position: relative;
-    display: block;
-    margin: 15px auto;
-    width: 245px;
-    padding: 11px 27px;
-    font-size: 22px;
-    padding-left: 62px;
-}
-
-.zakaz-block.contacts .socials2{
-    text-align: left;
-    margin: 21px 0 0 102px;
-}
-
-.zakaz-block.contacts .socials2 .item{
-    width: auto;
-    padding-left: 35px;
-    text-decoration: none;
-    margin-bottom: 14px;
-}
-
-.zakaz-block.contacts .socials2 .item:hover span{
-    text-decoration: underline;
-}
-
-.zakaz-block.contacts .email-container{
-    margin-top: 10px;
-}
-
-.zakaz-block.contacts .line{
-    margin: 20px auto 15px auto;
-    width: 150px;
-    height: 1px;
-    background: #929292;
-}
-
-.zakaz-block.contacts .email{
-
-}
-
-.zakaz-block.contacts .email:before {
-    content: url('../img/email.png');
-    position: absolute;
-    top: 14px;
-    left: 19px;
-}
-
-.zakaz-block.contacts .phone:before {
-    content: url('../img/phone2.png');
-    position: absolute;
-    top: 10px;
-    left: 19px;
 }
 
 .index-page .block2{
@@ -1624,6 +1564,91 @@ ul.style1.two li:nth-child(4){
 /*---------/HARDWARE PAGE------------*/
 
 
+/*---------CONTACTS PAGE------------*/
+.zakaz-block.contacts{
+    width: 380px;
+    margin-top: 20px;
+    padding: 20px 30px;
+
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.75);
+    -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.75);
+    box-shadow: 1px 2px 5px rgba(0,0,0,.75);
+    border: solid 2px #ccc;
+}
+
+.zakaz-block.contacts.one{
+    float: left;
+}
+
+.zakaz-block.contacts.two{
+    float: right;
+}
+
+.zakaz-block.contacts .button{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 11px 27px;
+    font-size: 22px;
+    padding-left: 62px;
+    box-sizing: border-box;
+}
+
+.zakaz-block.contacts .socials2{
+    text-align: left;
+    margin: -1px 0 0 102px;
+}
+
+.zakaz-block.contacts .socials2 .item{
+    width: auto;
+    padding-left: 35px;
+    text-decoration: none;
+    margin-bottom: 14px;
+}
+
+.zakaz-block.contacts .socials2 .item:hover span{
+    text-decoration: underline;
+}
+
+.zakaz-block.contacts .email-container{
+    margin-top: 10px;
+}
+
+.zakaz-block.contacts .line{
+    margin: 20px auto 15px auto;
+    width: 150px;
+    height: 1px;
+    background: #929292;
+}
+
+.zakaz-block.contacts .email{
+
+}
+
+.zakaz-block.contacts .email:before {
+    content: url('../img/email.png');
+    position: absolute;
+    top: 14px;
+    left: 19px;
+}
+
+.zakaz-block.contacts .phone:before {
+    content: url('../img/phone2.png');
+    position: absolute;
+    top: 10px;
+    left: 19px;
+}
+/*---------/CONTACTS PAGE------------*/
+
+
 /*---------OTHER PAGES------------*/
 
 .divider{
@@ -1634,33 +1659,21 @@ ul.style1.two li:nth-child(4){
 }
 
 /*price-page*/
-.price-text{
-    width: 636px;
-    float: left;
-}
-
 .price-heart{
     float: right;
-    margin-top: 160px;
+    margin-left: 15px;
 }
 /*/price-page*/
 
 /*about-page*/
 .chick1{
     float: left;
-    width: 212px;
-}
-
-.about-text{
-    float: left;
-    width: 450px;
-    margin-left: 15px;
-    text-align: justify;
+    margin-right: 15px;
 }
 
 .chick2{
-    float: left;
-    margin-top: 165px;
+    float: right;
+    margin-left: 15px;
 }
 /*/about-page*/
 

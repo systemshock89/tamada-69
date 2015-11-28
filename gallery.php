@@ -8,7 +8,7 @@
 <div class="content">
     <h1>Свадебные фото</h1>
     <div class="divider"></div>
-   <div class="catalog block">
+   <div class="catalog gallery block">
        <div class="catalog-container">
            <div class="item">
                <a href="/img/gallery/big/gallery-img1.jpg" class="img-container fancybox-thumb" rel="fancybox-thumb">

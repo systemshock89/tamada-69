@@ -12,7 +12,7 @@
     </span>
     <h1>Контактная информация о ведущем на праздник</h1>
     <div class="divider"></div>
-   <div class="zakaz-block one contacts animated" style="float: left;">
+   <div class="zakaz-block one contacts animated">
        Связаться со мной можно<br> по телефону:
        <a href="tel:>+79607158265" class="button phone" itemprop='telephone'>+7-960-715-82-65</a>
       <span itemprop='openingHours' datetime='Mo-Su 9:00-22:00'>с 9 до 22 без выходных</span>
@@ -23,7 +23,7 @@
        </div>
 
    </div>
-   <div class="zakaz-block two contacts animated" style="float: right">
+   <div class="zakaz-block two contacts animated">
        <br> А также можете найти меня в социальных сетях:<br><br>
        <div class="socials2">
            <a class="item vk" href="http://vk.com/tamada_tver69" target="_blank"> - <span>Вконтакте</span></a><br>
@@ -33,6 +33,7 @@
        </div>
 
    </div>
+    <div class="clear"></div>
 </div>
 
 <? include "templates/footer.php"; ?>

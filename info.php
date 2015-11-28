@@ -8,7 +8,7 @@
 <div class="content">
     <h1>Дополнительная информация о тамаде и ведущем на праздник</h1>
     <div class="divider"></div>
-    <div class="catalog podrazdeli">
+    <div class="catalog sections">
         <div class="catalog-container">
             <a href="/hardware" class="item">
                 <div class="img-container">
