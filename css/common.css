@@ -933,6 +933,7 @@ footer .phone {
 }
 
 footer .phone:before{
+    content: '';
     background: url('../img/spritesheet.png') no-repeat  -80px -69px;;
     width: 35px;
     height: 28px;
