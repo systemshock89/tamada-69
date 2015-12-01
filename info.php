@@ -12,13 +12,13 @@
         <div class="catalog-container">
             <a href="/hardware" class="item">
                 <div class="img-container">
-                    <img src="/img/podrazdel1.png" alt="">
+                    <img src="/img/sections/section1.png" alt="Аппаратура для праздника">
                 </div>
                 <div class="name">Аппаратура для праздника</div>
             </a>
             <a href="/gallery" class="item">
                 <div class="img-container">
-                    <img src="/img/podrazdel2.png" alt="">
+                    <img src="/img/sections/section2.png" alt="Свадебные фото">
                 </div>
                 <div class="name">Свадебные фото</div>
             </a>

@@ -42,8 +42,47 @@
                     <div class="text-container-wraper">
                         <div class="text-container-wraper2">
                             <a href="/contact" class="link-container">
-                                <div class="title">Проводится весенняя акция!</div>
-                                <div class="text">Скидки в честь майских праздников.<br>Устройте себе праздник вместе с нами!</div>
+                                <div class="title">Подарите незабываемые впечатления</div>
+                                <div class="text">Себе и своим близким!</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item slide4">
+                <img class="img-slide-pic" src="/img/slides/slide4.jpg" alt=""/>
+                <div class="text-container">
+                    <div class="text-container-wraper">
+                        <div class="text-container-wraper2">
+                            <a href="/contact" class="link-container">
+                                <div class="title">Пригласите Деда Мороза</div>
+                                <div class="text">на свой Новый Год!</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item slide5">
+                <img class="img-slide-pic" src="/img/slides/slide5.jpg" alt=""/>
+                <div class="text-container">
+                    <div class="text-container-wraper">
+                        <div class="text-container-wraper2">
+                            <a href="/contact" class="link-container">
+                                <div class="title">Зимние скидки!</div>
+                                <div class="text">Успейте заказать до Нового года</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item slide6">
+                <img class="img-slide-pic" src="/img/slides/slide6.jpg" alt=""/>
+                <div class="text-container">
+                    <div class="text-container-wraper">
+                        <div class="text-container-wraper2">
+                            <a href="/contact" class="link-container">
+                                <div class="title">Новый год уже близко!</div>
+                                <div class="text">Устройте себе праздник</div>
                             </a>
                         </div>
                     </div>

@@ -344,9 +344,9 @@ $(function(){
 
     //header phone
     setInterval(function() {
-        $('header .phone img').removeClass('wobble');
+        $('header .phone .phone-img').removeClass('wobble');
         setTimeout(function() {
-            $('header .phone img').addClass('wobble');
+            $('header .phone .phone-img').addClass('wobble');
         }, 100);
     }, 7000);
     /* /CSS3 анимации */

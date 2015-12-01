@@ -64,6 +64,17 @@
            <p>3G Модем<br> для музыки по заявкам</p>
        </div>
    </div>
+    <div class="table-block" data-key="animated-block-table">
+        <div class="colomn one animated">
+            <p>Дымогенератор для спецэффектов</p>
+        </div>
+        <div class="colomn two animated">
+            <div class="rays-container rays6">
+                <div class="rays-logo"></div>
+                <div class="rays"></div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <? include "templates/footer.php"; ?>

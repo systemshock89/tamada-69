@@ -18,7 +18,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
     <![endif]-->
 
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- Fonts Loader from fonts.css (HTML5 LocalStorage) -->
+    <script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="/css/fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.4/slicknav.min.css">
 <!--    <link rel="stylesheet" href="/css/jquery.fancybox.css">-->
@@ -42,14 +44,14 @@
     <header class="content-wraper">
         <div class="content clearfix">
             <a class="logo" href="/">
-                <img src="/img/logo.png" class="animated" alt=""/>
+                <img src="/img/logo.png" class="animated" alt="Энергичный тамада Виктор"/>
                 <div class="text">Энергичный тамада<br> Виктор</div>
             </a>
             <div class="contacts">
                 <div class="text"><span>Звоните!</span> с 9 до 22 без выходных!</div>
                 <a href="tel:+79607158265" class="phone">
                     <span>
-                         <img class="animated" src="/img/phone.png" alt=""/>
+                        <div class="phone-img animated"></div>
                         +7-960-715-82-65
                     </span>
                 </a>

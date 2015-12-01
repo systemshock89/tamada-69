@@ -421,7 +421,8 @@
 
     .menu-top:before,
     .menu-top:after{
-        content: '';
+        border-top: 12px solid transparent;
+        border-top: 12px solid transparent;
     }
 
     footer .copyright{
@@ -461,6 +462,8 @@
     .rays-container{
         margin-left: auto!important;
         margin-right: auto!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
     }
 
     .rays-container.rays3{
@@ -511,7 +514,7 @@
     }
 
     header .contacts{
-        margin-top: 8px;
+        margin-top: 6px;
         padding: 8px 15px;
     }
 
@@ -524,9 +527,8 @@
         font-size: 18px;
     }
 
-    header .contacts .phone img{
-        top: 5px;
-        width: 30px;
+    header .contacts .phone .phone-img{
+        top: 4px;
     }
 
     header .contacts .phone:hover span:before{
@@ -786,6 +788,60 @@
         float: none;
         margin: 0 0 0 15px;
         width: auto;
+    }
+
+    ul.style1.one li:nth-child(1){
+        -webkit-animation-duration: 0.6s;
+        animation-duration:  0.6s;
+    }
+
+    ul.style1.one li:nth-child(2){
+        -webkit-animation-duration: 0.6s;
+        animation-duration:  0.6s;
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+    }
+
+    ul.style1.one li:nth-child(3){
+        -webkit-animation-duration: 0.6s;
+        animation-duration:  0.6s;
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+
+    ul.style1.one li:nth-child(4){
+        -webkit-animation-duration: 0.6s;
+        animation-duration:  0.6s;
+        -webkit-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+    }
+
+    ul.style1.two li:nth-child(1){
+        -webkit-animation-duration: 0.6s;
+        animation-duration:  0.6s;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+    }
+
+    ul.style1.two li:nth-child(2){
+        -webkit-animation-duration: 0.6s;
+        animation-duration:  0.6s;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+    }
+
+    ul.style1.two li:nth-child(3){
+        -webkit-animation-duration: 0.6s;
+        animation-duration:  0.6s;
+        -webkit-animation-delay:1s;
+        animation-delay: 1s;
+    }
+
+    ul.style1.two li:nth-child(4){
+        -webkit-animation-duration: 0.6s;
+        animation-duration:  0.6s;
+        -webkit-animation-delay: 1.2s;
+        animation-delay: 1.2s;
     }
     /*---------/RESPONSIVE INDEX PAGE------------*/
 
