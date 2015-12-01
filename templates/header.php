@@ -34,7 +34,7 @@
 <!--    <link rel="stylesheet" href="/css/common.css?v=11">-->
 <!--    <link rel="stylesheet" href="/css/responsive.css?v=01">-->
 
-    <link rel="stylesheet" href="/css/production.css?v=01">
+    <link rel="stylesheet" href="/css/production.css?v=02">
 </head>
 
 <body class="<?= $page_name ?>">
