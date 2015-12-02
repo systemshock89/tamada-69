@@ -383,6 +383,10 @@
     .index-page .heart2{
         display: inline-block;
     }
+
+    .index_slider{
+        min-height: inherit;
+    }
     /*---------/RESPONSIVE INDEX PAGE------------*/
 
 

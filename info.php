@@ -8,6 +8,9 @@
 <div class="content">
     <h1>Дополнительная информация о тамаде и ведущем на праздник</h1>
     <div class="divider"></div>
+
+    <p>Здесь будет публиковаться дополнительная информация, касающаяся проведения как свадеб так и других праздничных мероприятий</p>
+
     <div class="catalog sections">
         <div class="catalog-container">
             <a href="/hardware" class="item">

@@ -539,6 +539,8 @@ header .contacts span{
 
 .index_slider {
     position: relative;
+    min-height: 360px;
+    background: #f5f5f5;
 }
 
 .index_slider .item {
@@ -546,7 +548,6 @@ header .contacts span{
     max-width: 1000px;
     max-height: 360px;
     background-size: cover;
-    background: #b4b4b4;
 }
 
 .index_slider .item .img-slide-pic{
@@ -1141,10 +1142,6 @@ ul.style1.two li:nth-child(4){
     margin: 0 45px 0 0;
     width: 625px;
     line-height: 20px;
-}
-
-.index-page .block2 .left-part p{
-    text-align: justify;
 }
 
 .index-page .block2 .left-part b.phone{

@@ -23,7 +23,7 @@
 
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.4/slicknav.min.css">
-<!--    <link rel="stylesheet" href="/css/jquery.fancybox.css">-->
+    <link rel="stylesheet" href="/css/jquery.fancybox.css">
 
     <? if ( $page_name == 'index-page'){ ?>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
@@ -31,10 +31,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.2/owl.transitions.min.css">
     <? } ?>
 
-<!--    <link rel="stylesheet" href="/css/common.css?v=11">-->
-<!--    <link rel="stylesheet" href="/css/responsive.css?v=01">-->
+    <link rel="stylesheet" href="/css/common.css?v=11">
+    <link rel="stylesheet" href="/css/responsive.css?v=01">
 
-    <link rel="stylesheet" href="/css/production.css?v=02">
+<!--    <link rel="stylesheet" href="/css/production.css?v=02">-->
 </head>
 
 <body class="<?= $page_name ?>">
