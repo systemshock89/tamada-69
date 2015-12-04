@@ -124,14 +124,16 @@ $(function(){
             owl.find('.owl-controls .owl-buttons .owl-prev').attr('title', 'Предыдущий');
             owl.find('.owl-controls .owl-buttons .owl-next').attr('title', 'Следующий');
 
-            //Sort random function
-            function random(owlSelector){
-                owlSelector.children().sort(function(){
-                    return Math.round(Math.random()) - 0.5;
-                }).each(function(){
-                    $(this).appendTo(owlSelector);
-                });
-            }
+
+        }
+
+        //Sort random function
+        function random(owlSelector){
+            owlSelector.children().sort(function(){
+                return Math.round(Math.random()) - 0.5;
+            }).each(function(){
+                $(this).appendTo(owlSelector);
+            });
         }
     });
 
