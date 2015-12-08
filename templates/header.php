@@ -52,7 +52,7 @@
                 <a href="tel:+79607158265" class="phone">
                     <span>
                         <div class="phone-img animated"></div>
-                        +7-960-715-82-65
+                        8-960-715-82-65
                     </span>
                 </a>
             </div>

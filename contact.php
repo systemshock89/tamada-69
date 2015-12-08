@@ -14,7 +14,7 @@
     <div class="divider"></div>
    <div class="zakaz-block one contacts animated">
        Связаться со мной можно<br> по телефону:
-       <a href="tel:+79607158265" class="button phone" itemprop='telephone'>+7-960-715-82-65</a>
+       <a href="tel:+79607158265" class="button phone" itemprop='telephone'>8-960-715-82-65</a>
       <span itemprop='openingHours' datetime='Mo-Su 9:00-22:00'>с 9 до 22 без выходных</span>
        <div class="line"></div>
        <div class="email-container">
